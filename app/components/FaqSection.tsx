@@ -1,4 +1,3 @@
-// components/FAQSection.tsx
 "use client";
 
 interface FAQItem {
@@ -11,28 +10,28 @@ const FaqSection: React.FC = () => {
   const faqData: FAQItem[] = [
     {
       id: 'faq1',
-      question: "What is AI, and how does it work?",
-      answer: "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and make decisions. It works by using algorithms to process large datasets, identify patterns, and make predictions or decisions."
+      question: 'What is AI, and how does it work?',
+      answer: 'Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and make decisions. It works by using algorithms to process large datasets, identify patterns, and make predictions or decisions.'
     },
     {
       id: 'faq2',
-      question: "What programming languages are best for AI development?",
-      answer: "Popular programming languages for AI development include Python, R, Java, and Julia. Python is widely preferred due to its extensive libraries such as TensorFlow, PyTorch, and scikit-learn."
+      question: 'What programming languages are best for AI development?',
+      answer: 'Popular programming languages for AI development include Python, R, Java, and Julia. Python is widely preferred due to its extensive libraries such as TensorFlow, PyTorch, and scikit-learn.'
     },
     {
       id: 'faq3',
-      question: "What is machine learning, and how is it different from AI?",
-      answer: "Machine Learning (ML) is a subset of AI that focuses on developing algorithms that allow machines to learn from data and improve over time without being explicitly programmed. AI is a broader concept that includes ML and other techniques."
+      question: 'What is machine learning, and how is it different from AI?',
+      answer: 'Machine Learning (ML) is a subset of AI that focuses on developing algorithms that allow machines to learn from data and improve over time without being explicitly programmed. AI is a broader concept that includes ML and other techniques.'
     },
     {
       id: 'faq4',
-      question: "How can I get started with software development for AI?",
-      answer: "To get started, learn programming languages like Python, understand data structures and algorithms, and explore AI frameworks like TensorFlow or PyTorch. Online courses, tutorials, and projects are excellent resources for beginners."
+      question: 'How can I get started with software development for AI?',
+      answer: 'To get started, learn programming languages like Python, understand data structures and algorithms, and explore AI frameworks like TensorFlow or PyTorch. Online courses, tutorials, and projects are excellent resources for beginners.'
     },
     {
       id: 'faq5',
-      question: "What are the ethical considerations in AI development?",
-      answer: "Ethical considerations include ensuring fairness, transparency, accountability, and privacy in AI systems. Developers must avoid bias in training data and ensure the technology is used responsibly."
+      question: 'What are the ethical considerations in AI development?',
+      answer: 'Ethical considerations include ensuring fairness, transparency, accountability, and privacy in AI systems. Developers must avoid bias in training data and ensure the technology is used responsibly.'
     }
   ];
 
@@ -71,7 +70,7 @@ const FaqSection: React.FC = () => {
               </summary>
 
               <p className="mt-4 px-4 leading-relaxed text-gray-700">
-                {faq.answer}
+                {faq.answer.replace(/"/g, '&quot;')}
               </p>
             </details>
           ))}
