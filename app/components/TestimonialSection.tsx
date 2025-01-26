@@ -37,7 +37,7 @@ export default function Testimonial() {
               <div className="flex flex-col bg-gray-50 rounded-xl shadow-lg dark:bg-neutral-900 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex-auto p-6 md:p-8">
                   <p className="text-base italic md:text-lg text-gray-700 dark:text-neutral-200">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-b-xl md:px-7 dark:bg-neutral-800">
